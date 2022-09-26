@@ -1,0 +1,17 @@
+Library needed to make Alexa
+
+pyttsx3 - this library is for text to speech conversion
+Speech_recognition - this library is to receive a voice
+pywhatkit - this is to send the message through whatsapp automatically
+datetime - this library is to insert or check date and time
+wikipedia - this library is used to get the data of browser
+pyjokes - this library is to get jokes 
+numpy
+matplotlib
+pyplot
+pandas
+streamlit
+pillow
+opencv
+pzgrun
+dputils

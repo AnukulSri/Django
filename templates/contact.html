@@ -1,0 +1,45 @@
+{% extends 'Master_Page.html' %}
+{% block title%}Contact {%endblock title%}
+{% block body %}
+<div class="container-fluid px-0">
+    <img src="https://source.unsplash.com/1600x600/?contact" class="img-fluid" alt="...">
+
+</div>
+<div class="container py-5">
+<h1 class = "text-center my-3">Contact Us</h1>
+<form method="post" action="/contact">
+  {% csrf_token %}    {% comment %} this is to tell that info is come from same site{% endcomment %}
+    <div class="row">
+      <div class="col col-6 col-md-4">
+       
+      </div>
+      <div class="col col-6 col-md-4">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="name" class="form-control" id="name" name="name" aria-describedby="">
+        </div>
+       <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+       </div>
+        <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea type="message" class="form-control" id="message" name="message" ></textarea>
+       </div> 
+       <div class="mb-3">
+        <label for="Password" class="form-label">Password</label>
+        <input type="Password" class="form-control" id="Password" name="Password">
+       </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+
+      </div>
+      <div class="col col-6 col-md-4">
+     
+      </div>
+    </div>
+  </form>
+</div>
+
+
+{% endblock body %}
